@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Cadastro</title>
+    <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+    <div  class="cadastro-container">
+         <h1> Cadastro</h1>
+         <div class="formulario-card" >
+
+        <h2>Informe seus dados</h2>
+        <form action="processa_cadastro.php" method="POST">
+            <lebel for="nomeC">Nome completo:</lebel>
+            <input type="text" class="nomeC" name="nomeC" required><br><br>
+            <lebel for="telefonec">Número de celular:</lebel>
+            <input type="tel" class="telefonec" name="telefonec" requerid><br><br>
+            <lebel for="email">E-mail</lebel>
+            <input type="email" class="email" name="email" required><br><br>
+            <lebel for="senha">senha</lebel>
+            <input type="password" class="senha" id="senha" required><br><br>
+            <lebel for="confirmaSenha">Confirme sua senha: </lebel>
+            <input type="password" id="confirmaSenha" required><br><br>
+         
+            <button type="submit">Confirmar</button>
+            <button type="button" class="botaoCancele">Cancelar</button>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
